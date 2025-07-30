@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@plugin "tailwindcss-motion";
+@plugin "tailwindcss-intersect";
+
+html {
+  font-size: 90%;
+}
+* {
+  /*
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  */
+  @apply antialiased;
+}
+
+@theme {
+  --shadow-center: 0px 0px 46px 9px rgba(0, 0, 0, 0.5);
+  --shadow-center-sm: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+  @apply px-4 py-2 text-white antialiased rounded-full bg-rose-600 hover:brightness-105 hover:scale-105 hover:shadow-sm transition-all disabled:bg-rose-600/30 disabled:hover:scale-100;
+}
+
+.bg-background {
+  @apply bg-white dark:bg-neutral-900 dark:text-white;
+}
+
+.bg-background-secondary {
+  @apply bg-gray-100 dark:bg-neutral-800 dark:text-white;
+}
+
+.bg-background-tertiary {
+  @apply bg-slate-900 dark:bg-neutral-700 dark:text-white;
+}
+
+input,
+textarea {
+  @apply border-1 rounded-lg antialiased border-black/50 p-2 dark:border-white/50;
+}
+
+textarea {
+  @apply min-h-[200px];
+}
+
+h1 {
+  @apply text-4xl font-extrabold antialiased text-center sm:text-left;
+}
+
+h2 {
+  @apply text-2xl font-bold antialiased;
+}
+
+h3 {
+  @apply text-xl font-bold antialiased;
+}
+
+h3 {
+  @apply text-lg font-bold antialiased text-black/50 dark:text-white;
+}
+
+ul li {
+  @apply list-disc list-inside;
+}

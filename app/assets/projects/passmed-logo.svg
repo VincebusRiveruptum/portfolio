@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="letra" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 2000">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-family: PTSans-CaptionBold, 'PT Sans Caption';
+        font-size: 379.81px;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="908.23" y1="663.94" x2="1298.41" y2="520.47"/>
+  <g>
+    <g>
+      <circle class="cls-3" cx="908.23" cy="663.94" r="156.59"/>
+      <circle class="cls-3" cx="912.92" cy="1044.14" r="67.58"/>
+      <circle class="cls-3" cx="1298.41" cy="520.47" r="67.58"/>
+      <circle class="cls-3" cx="1242.25" cy="885.14" r="67.58"/>
+      <polyline class="cls-1" points="908.23 663.94 1242.26 885.34 912.92 1044.14 908.23 663.94"/>
+    </g>
+    <text class="cls-2" transform="translate(154.74 1442.27) scale(1.05 1)"><tspan class="cls-4" x="0" y="0">P</tspan><tspan x="223.33" y="0">assMed</tspan></text>
+  </g>
+</svg>
