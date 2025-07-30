@@ -9,4 +9,16 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   modules: ["@vueuse/nuxt"],
+  app: {
+    head: {
+      title: "Vincebus Riveruptum's portfolio",
+      link: [
+        {
+          rel: "icon",
+          type: "image/png",
+          href: "/logo_white.png",
+        },
+      ],
+    },
+  },
 });
