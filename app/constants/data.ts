@@ -8,7 +8,7 @@ import php from "@/assets/php.svg";
 import docker from "@/assets/docker.svg";
 import vue from "@/assets/vue.svg";
 import pinia from "@/assets/pinia.svg";
-import livewire from "@/assets/livewire.ico";
+import livewire from "@/assets/livewire.png";
 import vite from "@/assets/vite.svg";
 import python from "@/assets/python.svg";
 import clang from "@/assets/clang.svg";
@@ -19,7 +19,7 @@ import dotnet from "@/assets/net.png";
 import javascript from "@/assets/javascript.svg";
 import typescript from "@/assets/typescript.svg";
 import vuequery from "@/assets/vuequery.png";
-import postman from "@/assets/postman.png";
+import postman from "@/assets/postman.svg";
 import mysql from "@/assets/mysql.svg";
 
 import passmedLogo from "@/assets/projects/passmed-logo.svg";

@@ -9,14 +9,18 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   modules: ["@vueuse/nuxt"],
+  nitro: {
+    preset: "static",
+  },
   app: {
+    baseURL: "/portfolio/",
     head: {
       title: "Vincebus Riveruptum's portfolio",
       link: [
         {
           rel: "icon",
           type: "image/png",
-          href: "/logo_white.png",
+          href: "/portfolio/logo_white.png",
         },
       ],
     },
