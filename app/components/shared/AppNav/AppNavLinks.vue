@@ -2,6 +2,8 @@
 import { type NavLink } from "@/types/global";
 import AppNavlink from "./AppNavlink.vue";
 import { ref } from "vue";
+import { LightbulbIcon, LightbulbOffIcon } from "lucide-vue-next";
+import { useColorMode } from "@vueuse/core";
 
 const props = defineProps<{
   links: NavLink[];
@@ -13,6 +15,8 @@ const linkRefs = ref<NavLink[]>([...props.links]);
 const currentSection = ref<HTMLElement | null>();
 
 const currentLink = ref<NavLink | null>();
+
+const mode = useColorMode();
 
 const setActive = (index: number) => {
   linkRefs.value.forEach((link: NavLink, i: number) => {
@@ -49,5 +53,10 @@ const setActive = (index: number) => {
       :active="link.active"
       @click="setActive(i)"
     />
+
+    <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
+      <LightbulbIcon v-if="mode === 'dark'" />
+      <LightbulbOffIcon v-if="mode === 'light'" />
+    </button>
   </div>
 </template>

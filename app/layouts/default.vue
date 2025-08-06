@@ -12,6 +12,8 @@ const { isScrolling, y } = useScroll(mainWindow);
 const hideNavbar = ref<boolean>(false);
 
 let timeout: ReturnType<typeof setTimeout> | null = null;
+
+
 watch(
   () => isScrolling.value,
   (newValue) => {

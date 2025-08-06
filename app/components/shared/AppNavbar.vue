@@ -5,6 +5,8 @@ import AppNavLinks from "./AppNav/AppNavLinks.vue";
 import type { NavLink } from "../../types/global";
 import { useRoute } from "vue-router";
 import { onMounted, ref } from "vue";
+import { useColorMode } from "@vueuse/core";
+import { LightbulbIcon, LightbulbOffIcon } from "lucide-vue-next";
 
 const route = useRoute();
 
@@ -13,6 +15,8 @@ const props = defineProps<{
 }>();
 
 const mainSection = ref<HTMLElement | null>();
+
+const mode = useColorMode();
 
 const navLinks: NavLink[] = [
   {
@@ -99,9 +103,9 @@ onMounted(() => {
         :links="navLinks"
       />
 
-      <div class="sm:hidden">
+      <div class="sm:hidden flex gap-8">
         <NuxtLink
-          v-if="route.name === 'landing-page'"
+          v-if="$route.path == '/home'"
           :to="{ ...navLinks[5].route }"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
@@ -110,13 +114,18 @@ onMounted(() => {
         </NuxtLink>
 
         <NuxtLink
-          v-if="route.name === 'contact-view'"
+          v-if="$route.path == '/contact'"
           :to="{ ...navLinks[1].route }"
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
           Home
         </NuxtLink>
+
+        <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
+          <LightbulbIcon v-if="mode === 'dark'" />
+          <LightbulbOffIcon v-if="mode === 'light'" />
+        </button>
       </div>
     </div>
   </div>

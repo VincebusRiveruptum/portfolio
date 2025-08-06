@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @plugin "tailwindcss-motion";
 @plugin "tailwindcss-intersect";
-
+@custom-variant dark (&:where(.dark, .dark *));
 html {
   font-size: 90%;
 }
