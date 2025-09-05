@@ -6,7 +6,11 @@ import type { NavLink } from "../../types/global";
 import { useRoute } from "vue-router";
 import { onMounted, ref } from "vue";
 import { useColorMode } from "@vueuse/core";
-import { LightbulbIcon, LightbulbOffIcon } from "lucide-vue-next";
+import {
+  LightbulbIcon,
+  LightbulbOffIcon,
+  LanguagesIcon,
+} from "lucide-vue-next";
 
 const route = useRoute();
 
@@ -125,6 +129,10 @@ onMounted(() => {
         <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
           <LightbulbIcon v-if="mode === 'dark'" />
           <LightbulbOffIcon v-if="mode === 'light'" />
+        </button>
+
+        <button>
+          <LanguagesIcon />
         </button>
       </div>
     </div>

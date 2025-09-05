@@ -35,6 +35,7 @@ html {
   @apply bg-slate-900 dark:bg-neutral-700 dark:text-white;
 }
 
+
 input,
 textarea {
   @apply border-1 rounded-lg antialiased border-black/50 p-2 dark:border-white/50;

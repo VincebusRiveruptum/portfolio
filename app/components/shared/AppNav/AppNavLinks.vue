@@ -2,8 +2,13 @@
 import { type NavLink } from "@/types/global";
 import AppNavlink from "./AppNavlink.vue";
 import { ref } from "vue";
-import { LightbulbIcon, LightbulbOffIcon } from "lucide-vue-next";
+import {
+  LightbulbIcon,
+  LightbulbOffIcon,
+  LanguagesIcon,
+} from "lucide-vue-next";
 import { useColorMode } from "@vueuse/core";
+import AppDropdown from "../AppDropdown.vue";
 
 const props = defineProps<{
   links: NavLink[];
@@ -17,6 +22,8 @@ const currentSection = ref<HTMLElement | null>();
 const currentLink = ref<NavLink | null>();
 
 const mode = useColorMode();
+
+const { locales, setLocale } = useI18n();
 
 const setActive = (index: number) => {
   linkRefs.value.forEach((link: NavLink, i: number) => {
@@ -54,9 +61,29 @@ const setActive = (index: number) => {
       @click="setActive(i)"
     />
 
-    <button @click="mode = mode === 'dark' ? 'light' : 'dark'">
+    <button
+      class="hover:scale-105 transition-all"
+      @click="mode = mode === 'dark' ? 'light' : 'dark'"
+    >
       <LightbulbIcon v-if="mode === 'dark'" />
       <LightbulbOffIcon v-if="mode === 'light'" />
     </button>
+
+    <AppDropdown>
+      <template #button>
+        <LanguagesIcon />
+      </template>
+      <template #items>
+        <ul
+          v-for="locale in locales"
+          @click="setLocale(locale.code)"
+          class="hover:bg-purple-50 px-4 py-2 transition-all cursor-pointer dark:hover:bg-gray-500 dark:hover:text-white"
+        >
+          {{
+            locale.name
+          }}
+        </ul>
+      </template>
+    </AppDropdown>
   </div>
 </template>
