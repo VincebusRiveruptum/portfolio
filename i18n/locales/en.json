@@ -1,1 +1,44 @@
-{}
+{
+  "home-nav": "Home",
+  "personal-info-nav": "Personal Info",
+  "skills-nav": "Skills",
+  "experience-nav": "Experience",
+  "projects-nav": "Projects",
+  "contact-nav": "Contact",
+
+  "about-header": "Full Stack Developer & IT Engineer",
+  "about-me": "I'm a Full-stack developer from Chile with 1+ year experience in the field, a professional developer with a good set of problem solving and technical experience.",
+  "contact-me": "Contact me",
+  "personal-information": "Personal Information",
+  "degree": "Degree",
+  "address": "Address",
+
+  "generalist": "Generalist",
+  "generalist-paragraph": "I always try to reach the root of things and problems. Also, KISS",
+  "adaptability": "Adaptability",
+  "adaptability-paragraph": "I can get into anything",
+  "resilency": "Resilence",
+  "resilency-paragraph": "Its our job to solve problems",
+  "motivated": "Motivated",
+  "motivated-paragraph": "About code anything can be fun for me",
+  "skills": "Skills",
+  "web-deb": "Web dev.",
+
+  "experience": "Experience",
+
+  "databases": "Databases",
+  "documentation": "Documentation",
+  "languages": "Languages",
+
+  "contact": "Contact",
+  "contact-paragraph": "If you're interested you can contact me directly by filling the form below.",
+
+  "projects": "Projects",
+
+  "email": "Email",
+  "subject": "Subject",
+  "message": "Message",
+  "send": "Send",
+
+  "back-top":"Back to top"
+}

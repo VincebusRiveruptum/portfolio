@@ -1,1 +1,44 @@
-{}
+{
+  "home-nav": "Inicio",
+  "personal-info-nav": "Información personal",
+  "skills-nav": "Habilidades",
+  "experience-nav": "Experiencia",
+  "projects-nav": "Proyectos",
+  "contact-nav": "Contacto",
+
+  "about-header": "Desarrollador Full Stack & Ingeniero Informático",
+  "about-me": "Desarrollador Full-stack con 2 años de experiencia en el campo. Chileno, soy de la V Región. Soy un profesional con habiliades técnicas y de resolución de problemas.",
+  "contact-me": "Contactar",
+  "personal-information": "Información personal",
+  "degree": "Título",
+  "address": "Dirección",
+
+  "generalist": "Visión general",
+  "generalist-paragraph": "Al realizar una solución siempre busco abarcar el origen el origen de las cosas, con enfoque de KISS",
+  "adaptability": "Adaptabilidad",
+  "adaptability-paragraph": "Me adapto fácilmente a cualquier entorno y equipo",
+  "resilency": "Resilencia",
+  "resilency-paragraph": "Mi trabajo es solucionar problemas, los abrazo",
+  "motivated": "Motivado",
+  "motivated-paragraph": "Cualquier cosa relacionada con código y las máquinas me apasiona, siempre estoy abierto a aprender",
+
+  "skills": "Habilidades",
+  "web-deb": "Web dev.",
+
+  "databases": "Bases de datos",
+  "documentation": "Documentación",
+  "languages": "Lenguajes",
+
+  "experience": "Experiencia",
+
+  "contact": "Contacto",
+  "contact-paragraph": "Si estás interesado en contactarme, puedes escribirme un mensaje en el formulario de abajo",
+
+  "projects": "Proyectos",
+  "email": "Email",
+  "subject": "Tema",
+  "message": "Mensaje",
+  "send": "Enviar",
+
+  "back-top": "Volver arriba"
+}

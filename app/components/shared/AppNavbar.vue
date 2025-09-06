@@ -12,6 +12,8 @@ import {
   LanguagesIcon,
 } from "lucide-vue-next";
 
+const { t } = useI18n();
+
 const route = useRoute();
 
 const props = defineProps<{
@@ -22,9 +24,9 @@ const mainSection = ref<HTMLElement | null>();
 
 const mode = useColorMode();
 
-const navLinks: NavLink[] = [
+const navLinks = ref<NavLink[]>([
   {
-    title: "Home",
+    title: computed(() => t("home-nav")),
     name: "home",
     type: "scroll",
     route: {
@@ -33,7 +35,7 @@ const navLinks: NavLink[] = [
     active: false,
   },
   {
-    title: "Personal Information",
+    title: computed(() => t("personal-info-nav")),
     name: "personal-info",
     type: "scroll",
     route: {
@@ -42,7 +44,7 @@ const navLinks: NavLink[] = [
     active: false,
   },
   {
-    title: "Skills",
+    title: computed(() => t("skills-nav")),
     name: "skills",
     type: "scroll",
     route: {
@@ -51,7 +53,7 @@ const navLinks: NavLink[] = [
     active: false,
   },
   {
-    title: "Experience",
+    title: computed(() => t("experience-nav")),
     name: "experience",
     type: "scroll",
     route: {
@@ -60,7 +62,7 @@ const navLinks: NavLink[] = [
     active: false,
   },
   {
-    title: "Projects",
+    title: computed(() => t("projects-nav")),
     name: "projects",
     type: "scroll",
     route: {
@@ -69,7 +71,7 @@ const navLinks: NavLink[] = [
     active: false,
   },
   {
-    title: "Contact",
+    title: computed(() => t("contact-nav")),
     name: "contact",
     type: "route",
     route: {
@@ -77,7 +79,7 @@ const navLinks: NavLink[] = [
     },
     active: false,
   },
-];
+]);
 
 const scrollUp = () => {
   if (mainSection.value)
@@ -102,6 +104,7 @@ onMounted(() => {
 
     <div class="flex flex-row gap-8">
       <AppNavLinks
+        v-if="navLinks"
         class="hidden sm:flex"
         :current-offset="props.currentOffset"
         :links="navLinks"
@@ -114,7 +117,7 @@ onMounted(() => {
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
-          Contact
+          {{ $t("contact-nav") }}
         </NuxtLink>
 
         <NuxtLink
@@ -123,7 +126,7 @@ onMounted(() => {
           class="btn-primary font-semibold !bg-purple-500"
           @click="scrollUp()"
         >
-          Home
+          {{ $t("home-nav") }}
         </NuxtLink>
 
         <button @click="mode = mode === 'dark' ? 'light' : 'dark'">

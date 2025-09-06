@@ -49,7 +49,7 @@ const setActive = (index: number) => {
 </script>
 
 <template>
-  <div class="flex flex-row items-center gap-8 w-full">
+  <div class="flex flex-row items-center gap-8 w-full" v-if="linkRefs">
     <AppNavlink
       ref="navLinks"
       v-for="(link, i) in linkRefs"
