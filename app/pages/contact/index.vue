@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { useContact } from "~/composables/useContact";
 import AppSpinnerScreen from "@/components/shared/AppSpinnerScreen.vue";
+import Swal from "sweetalert2";
+import { alert } from "@/utils/swal";
 
 const { form, isFormFilled, isPending, isSuccess, sendMessage } = useContact();
 </script>
