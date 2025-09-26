@@ -50,3 +50,11 @@ export type Skill = {
     }[];
   };
 };
+
+export type Project = {
+  pictures?: Array<any>;
+  title: string;
+  description: string;
+  background?: string;
+  techStack?: Tech[];
+};
