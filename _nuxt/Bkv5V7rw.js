@@ -1,4 +1,4 @@
-import{Q as a}from"./CB10eN_N.js";/**
+import{Q as a}from"#entry";/**
  * @license lucide-vue-next v0.534.0 - ISC
  *
  * This source code is licensed under the ISC license.
