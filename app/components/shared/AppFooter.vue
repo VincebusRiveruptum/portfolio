@@ -25,7 +25,7 @@ const scrollTop = () => {
 
     <div class="flex flex-row items-center">
       <button class="hover:scale-105 transition-all" @click="scrollTop()">
-        Back to top
+        {{ $t("back-top") }}
       </button>
     </div>
   </div>

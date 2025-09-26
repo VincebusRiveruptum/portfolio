@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 
 <template>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-16 bg-background-secondary p-12 sm:py-[8%] sm:px-[15%]"
   >
     <div class="m-auto">
       <img
@@ -20,13 +20,11 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
       <h1 class="text-center sm:text-left">VICENTE RIVEROS GARAY</h1>
       <div class="flex flex-col sm:flex-row items-center gap-4">
         <img :src="cl" alt="Chile" class="w-8" />
-        <h3>Full Stack Developer & IT Engineer</h3>
+        <h3>{{ $t("about-header") }}</h3>
       </div>
       <div class="text-center sm:text-left">
         <p>
-          I'm a Full-stack developer from Chile with 1+ year experience in the
-          field, a professional developer with a good set of problem solving and
-          technical experience.
+          {{ $t("about-me") }}
         </p>
       </div>
       <div
@@ -43,7 +41,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
       </div>
 
       <NuxtLink :to="{ path: 'contact' }" class="w-full">
-        <button class="btn-primary w-full">Contact me</button>
+        <button class="btn-primary w-full">{{ $t("contact-me") }}</button>
       </NuxtLink>
     </div>
   </div>

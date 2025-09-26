@@ -8,9 +8,17 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
-  modules: ["@vueuse/nuxt"],
+  modules: ["@vueuse/nuxt", "@nuxtjs/i18n"],
   nitro: {
     preset: "static",
+  },
+  i18n: {
+    defaultLocale: "en",
+    strategy: 'no_prefix',
+    locales: [
+      { code: "en", name: "English", file: "en.json" },
+      { code: "es", name: "Español", file: "es.json" },
+    ],
   },
   app: {
     baseURL: "/portfolio/",

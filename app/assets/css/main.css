@@ -17,6 +17,7 @@ html {
 @theme {
   --shadow-center: 0px 0px 46px 9px rgba(0, 0, 0, 0.5);
   --shadow-center-sm: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);
+  --color-primary: rgb(130, 0, 255);
 }
 
 .btn-primary {
@@ -56,10 +57,10 @@ h3 {
   @apply text-xl font-bold antialiased;
 }
 
-h3 {
-  @apply text-lg font-bold antialiased text-black/50 dark:text-white;
+h4 {
+  @apply text-lg font-bold antialiased;
 }
 
 ul li {
-  @apply list-disc list-inside;
+  @apply list-disc list-outside;
 }

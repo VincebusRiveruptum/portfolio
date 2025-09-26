@@ -3,7 +3,7 @@ import { techs } from "@/constants/data";
 import AppTechButton from "@/components/shared/AppTechButton.vue";
 </script>
 <template>
-  <div class="flex flex-col gap-12 text-center px-4 sm:py-[5%] sm:px-[15%]">
+  <div class="flex flex-col gap-12 text-center px-4 sm:py-[8%] sm:px-[15%]">
     <h1>Tech Stack</h1>
 
     <div class="flex flex-col text-center items-center gap-4">
