@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import { projects } from "@/constants/data";
 import ProjectItem from "../ProjectItem.vue";
+import { useProjects } from "@/composables/useProjects";
+const { projects } = useProjects();
 </script>
 <template>
   <div
@@ -11,11 +12,7 @@ import ProjectItem from "../ProjectItem.vue";
       <ProjectItem
         v-for="(project, i) in projects"
         :key="'project' + i"
-        :title="project?.title"
-        :description="project?.description"
-        :tech-stack="project?.techStack"
-        :pictures="project?.pictures"
-        :background="project?.background"
+        :data="project"
       />
     </div>
   </div>

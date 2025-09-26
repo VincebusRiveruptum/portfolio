@@ -1,5 +1,5 @@
 import { CheckIcon, ConstructionIcon, PauseIcon } from "lucide-vue-next";
-import type { Tech } from "../types/global";
+import type { Project, Tech } from "../types/global";
 
 import git from "@/assets/git.svg";
 import laravel from "@/assets/laravel.png";
@@ -265,7 +265,7 @@ const projectStatus = [
   },
 ];
 
-const projects = [
+const projects_EN: Project[] = [
   /*  {
     title: "Test project",
     status: 0,
@@ -328,5 +328,71 @@ const projects = [
     pictures: [tookOneCapture],
   },
 ];
+const projects_ES: Project[] = [
+  /*  {
+    title: "Test project",
+    status: 0,
+    description: "This is a test proejct, lorem ipsum dolor quod!!!t.",
+    uri: "",
+    techStack: [
+      techs[1],
+      techs[2],
+      techs[3],
+      techs[4],
+      techs[5],
+      techs[6],
+      techs[7],
+      techs[8],
+      techs[9],
+      techs[10],
+      techs[11],
+      techs[12],
+      techs[13],
+      techs[14],
+      techs[15],
+      techs[16],
+      techs[17],
+      techs[18],
+    ],
+  },
+  */
 
-export { projects, projectStatus, techs };
+  {
+    title: "Passmed",
+    status: 0,
+    description:
+      "Proyecto SaaS de gestión de fichas médicas. Es un proyecto ambicioso el cual junto a un equipo experimentado de programadores participo como desarrollador front-end implementando e integrando las interfaces gráficas con el back-end, también en la toma de decisiones en aspectos de diseño UI y en tecnología.",
+    uri: "",
+    techStack: [techs[14], techs[8], techs[3], techs[6]],
+    background: "bg-[#00C6BE]",
+    pictures: [passmedLogo, passmedLogoAlt],
+  },
+  {
+    title: "Lupobenchmark",
+    status: 0,
+    description:
+      "Base de datos de componentes de PC y herramienta analisis de rendimiento. Actualmente esta en la etapa de diseño y arquitectura, el back-end está avanzado",
+    uri: "",
+    techStack: [techs[14], techs[8], techs[3], techs[2], techs[5], techs[6]],
+  },
+  {
+    title: "Tetris",
+    status: 1,
+    description: "Tetris en modo texto para MS-DOS, proyecto experimental.",
+    uri: "",
+    techStack: [techs[18], techs[19]],
+    pictures: [tetrisCapture],
+  },
+
+  {
+    title: "Took One",
+    status: 0,
+    description:
+      "Proyecto realizado por allá en el 2023, es editor de bitmpas y pixel art. Actualmente es una versión alpha con funcionamiento básico.",
+    uri: "",
+    techStack: [techs[21]],
+    pictures: [tookOneCapture],
+  },
+];
+
+export { projects_EN, projects_ES, projectStatus, techs };
