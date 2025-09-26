@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Observer } from "tailwindcss-intersect";
+import "animate.css";
 
 import AppNavbar from "@/components/shared/AppNavbar.vue";
 import AppFooter from "@/components/shared/AppFooter.vue";
@@ -12,7 +13,6 @@ const { isScrolling, y } = useScroll(mainWindow);
 const hideNavbar = ref<boolean>(false);
 
 let timeout: ReturnType<typeof setTimeout> | null = null;
-
 
 watch(
   () => isScrolling.value,

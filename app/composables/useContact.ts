@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { serviceId, templateId, options } from "@/constants/config";
 import type { ContactForm } from "@/types/global";
 import Swal from "sweetalert2";
+import { alert } from "@/utils/swal";
 
 const setForm = () => {
   return {
@@ -32,7 +33,7 @@ const useContact = () => {
     try {
       isPending.value = true;
       await emailjs.send(serviceId, templateId, form.value, options);
-      await Swal.fire({
+      await alert.fire({
         icon: "success",
         title: "Success",
         text: "Message delivered!",
@@ -43,7 +44,7 @@ const useContact = () => {
     } catch (err) {
       isError.value = true;
       console.error(err);
-      await Swal.fire({
+      await alert.fire({
         icon: "error",
         title: "Error",
         text: "Oops, there was a problem!",
