@@ -23,7 +23,11 @@
   "motivated-paragraph": "Cualquier cosa relacionada con código y las máquinas me apasiona, siempre estoy abierto a aprender",
 
   "skills": "Habilidades",
-  "web-deb": "Web dev.",
+  "web_development": "Desarrollo Web",
+
+  "frontend_": "Front-end",
+  "backend_": "Back-end",
+  "ui_libraries": "Librerias UI/Herramientas",
 
   "databases": "Bases de datos",
   "documentation": "Documentación",
@@ -32,10 +36,12 @@
   "experience": "Experiencia",
 
   "fullstack": "Desarrollador Full-stack",
-  "backend" : "Desarrollador Back-end",
-  "frontend" : "Desarrollador Front-end",
+  "backend": "Desarrollador Back-end",
+  "frontend": "Desarrollador Front-end",
   "research": "Investigación",
-  "internship" : "Pasantía Profesional",
+  "internship": "Pasantía Profesional",
+
+  "current_position": "Presente",
 
   "contact": "Contacto",
   "contact-paragraph": "Si estás interesado en contactarme, puedes escribirme un mensaje en el formulario de abajo",

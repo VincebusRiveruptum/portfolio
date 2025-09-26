@@ -9,7 +9,7 @@ const props = defineProps<{
 
 <template>
   <div class="flex flex-col gap-8">
-    <div class="flex justify-between gap-4">
+    <div class="flex justify-between gap-8">
       <h3>
         {{ $t(props.data.position) }} |
         <a :href="props.data.company?.url ?? '#'">{{
@@ -21,7 +21,7 @@ const props = defineProps<{
         {{
           props.data.end_date
             ? `- ${formatDate(props.data.end_date, "long")}`
-            : ""
+            : ` - ${$t("current_position")}`
         }}
       </h4>
     </div>

@@ -22,7 +22,11 @@
   "motivated": "Motivated",
   "motivated-paragraph": "About code anything can be fun for me",
   "skills": "Skills",
-  "web-deb": "Web dev.",
+
+  "web_development": "Web Development",
+  "frontend_": "Front-end",
+  "backend_": "Back-end",
+  "ui_libraries": "UI Libraries/Tools",
 
   "experience": "Experience",
 
@@ -31,6 +35,8 @@
   "frontend": "Front-end Developer",
   "research": "Research Assistant",
   "internship": "Professional Internship",
+
+  "current_position": "Present",
 
   "databases": "Databases",
   "documentation": "Documentation",

@@ -37,3 +37,16 @@ export type CareerExperience = {
     sections?: string[];
   };
 };
+
+export type Skill = {
+  title: string;
+  icon?: Component;
+  content: {
+    body?: string;
+    sections?: {
+      name?: string;
+      content: string;
+      tech?: Tech[];
+    }[];
+  };
+};

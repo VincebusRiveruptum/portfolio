@@ -1,40 +1,21 @@
 <script setup lang="ts">
 import { techs } from "@/constants/data";
 import AppTechButton from "@/components/shared/AppTechButton.vue";
+import SkillItem from "../SkillItem.vue";
+
+const { skills } = useSkills();
 </script>
 
 <template>
   <div
-    class="flex flex-col gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
+    class="flex flex-col gap-16 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
   >
     <h1>{{ $t("skills") }}</h1>
 
     <div class="flex flex-col gap-8">
-      <h3>Web dev.</h3>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div class="flex flex-col gap-8">
-          <ul>
-            <li>Back-end : Laravel, MVC architecture</li>
-            <li>Front-end: Vue 2/3, Pinia, Blade, DOM</li>
-            <li>UI Libraries: Tailwind-CSS, Shadcn, Bootstrap</li>
-          </ul>
-
-          <h3>{{ $t("databases") }}</h3>
-
-          <p>SQL Database management, MySQL, Postgresql</p>
-
-          <h3>{{ $t("documentation") }}</h3>
-
-          <ul>
-            <li>Relational data modeling</li>
-            <li>Basic knowledge of BPMN, UML and E-R Diagrams</li>
-          </ul>
-
-          <h3>{{ $t("languages") }}</h3>
-
-          <ul>
-            <li>English-intermediate</li>
-          </ul>
+        <div class="flex flex-col gap-16">
+          <SkillItem v-for="skill in skills" :key="skill" :data="skill" />
         </div>
 
         <div class="flex flex-row flex-wrap justify-center gap-4">

@@ -5,9 +5,9 @@ const { expList } = useExperience();
 </script>
 <template>
   <div
-    class="flex flex-col bg-background gap-12 p-12 sm:pb-[10%] sm:py-[5%] sm:px-[15%]"
+    class="flex flex-col bg-background gap-16 p-12 sm:pb-[10%] sm:py-[5%] sm:px-[15%]"
   >
-    <h1>Experience</h1>
+    <h1>{{ $t("experience") }}</h1>
 
     <div class="flex flex-col gap-18">
       <ExpItem v-for="exp in expList" :data="exp" :key="exp" />
