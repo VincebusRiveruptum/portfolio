@@ -18,7 +18,7 @@
   "adaptability": "Adaptabilidad",
   "adaptability-paragraph": "Me adapto fácilmente a cualquier entorno y equipo",
   "resilency": "Resilencia",
-  "resilency-paragraph": "Mi trabajo es solucionar problemas, los abrazo",
+  "resilency-paragraph": "Mi trabajo es abrazar a los problemas y solucionarlos",
   "motivated": "Motivado",
   "motivated-paragraph": "Cualquier cosa relacionada con código y las máquinas me apasiona, siempre estoy abierto a aprender",
 
@@ -30,6 +30,12 @@
   "languages": "Lenguajes",
 
   "experience": "Experiencia",
+
+  "fullstack": "Desarrollador Full-stack",
+  "backend" : "Desarrollador Back-end",
+  "frontend" : "Desarrollador Front-end",
+  "research": "Investigación",
+  "internship" : "Pasantía Profesional",
 
   "contact": "Contacto",
   "contact-paragraph": "Si estás interesado en contactarme, puedes escribirme un mensaje en el formulario de abajo",

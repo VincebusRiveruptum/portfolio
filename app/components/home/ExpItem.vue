@@ -1,15 +1,36 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
+import type { CareerExperience } from "~/types/global";
+
 const props = defineProps<{
-  position: string;
-  company: string;
-  period: string;
+  data: CareerExperience;
 }>();
 </script>
 
 <template>
   <div class="flex flex-col gap-8">
-    <h3>{{ props.position }} | {{ props.company }} | {{ props.period }}</h3>
-    <slot> </slot>
+    <div class="flex justify-between gap-4">
+      <h3>
+        {{ $t(props.data.position) }} |
+        <a :href="props.data.company?.url ?? '#'">{{
+          props.data.company.name
+        }}</a>
+      </h3>
+      <h4 class="!font-semibold !text-black/80">
+        {{ formatDate(props.data.start_date, "long") }}
+        {{
+          props.data.end_date
+            ? `- ${formatDate(props.data.end_date, "long")}`
+            : ""
+        }}
+      </h4>
+    </div>
+    <div>
+      <ul class="flex flex-col gap-8 mx-8">
+        <li v-for="section in props.data.content.sections">
+          {{ section }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>

@@ -26,6 +26,12 @@
 
   "experience": "Experience",
 
+  "fullstack": "Full-stack Developer",
+  "backend": "Back-end Developer",
+  "frontend": "Front-end Developer",
+  "research": "Research Assistant",
+  "internship": "Professional Internship",
+
   "databases": "Databases",
   "documentation": "Documentation",
   "languages": "Languages",
@@ -40,5 +46,5 @@
   "message": "Message",
   "send": "Send",
 
-  "back-top":"Back to top"
+  "back-top": "Back to top"
 }
