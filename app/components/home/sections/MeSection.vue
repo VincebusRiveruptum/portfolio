@@ -6,7 +6,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 
 <template>
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
+    class="grid grid-cols-1 sm:grid-cols-2 gap-16 bg-background-secondary p-12 sm:py-[8%] sm:px-[15%]"
   >
     <div class="m-auto">
       <img

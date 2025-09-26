@@ -6,6 +6,7 @@ import {
   LightbulbIcon,
   LightbulbOffIcon,
   LanguagesIcon,
+  CheckIcon,
 } from "lucide-vue-next";
 import { useColorMode } from "@vueuse/core";
 import AppDropdown from "../AppDropdown.vue";
@@ -23,7 +24,7 @@ const currentLink = ref<NavLink | null>();
 
 const mode = useColorMode();
 
-const { locales, setLocale } = useI18n();
+const { locales, setLocale, localeProperties } = useI18n();
 
 const setActive = (index: number) => {
   linkRefs.value.forEach((link: NavLink, i: number) => {
@@ -77,11 +78,12 @@ const setActive = (index: number) => {
         <ul
           v-for="locale in locales"
           @click="setLocale(locale.code)"
-          class="hover:bg-purple-50 px-4 py-2 transition-all cursor-pointer dark:hover:bg-gray-500 dark:hover:text-white"
+          class="hover:bg-primary/20 px-4 py-2 transition-all cursor-pointer dark:hover:bg-primary flex gap-4 items-center dark:hover:text-white"
         >
           {{
             locale.name
           }}
+          <CheckIcon v-if="locale.code === localeProperties.code" />
         </ul>
       </template>
     </AppDropdown>

@@ -22,7 +22,7 @@ onClickOutside(dropdownRef, () => (show.value = false));
     </button>
     <ul
       ref="dropdown"
-      class="absolute top-8 right-0 z-20 flex flex-col bg-background shadow-md rounded-lg transition-all font-semibold"
+      class="absolute top-8 right-0 z-20 flex flex-col bg-background shadow-md rounded-lg transition-all font-semibold overflow-clip"
       :class="{ hidden: !show }"
       @click="toggleDropdown()"
     >

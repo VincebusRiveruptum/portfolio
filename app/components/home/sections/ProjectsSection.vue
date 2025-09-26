@@ -4,10 +4,10 @@ import ProjectItem from "../ProjectItem.vue";
 </script>
 <template>
   <div
-    class="flex flex-col gap-12 bg-background-secondary p-12 sm:py-[5%] sm:px-[15%]"
+    class="flex flex-col gap-20 bg-background-secondary p-12 sm:py-[8%] sm:px-[15%]"
   >
     <h1>{{ $t("projects") }}</h1>
-    <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-20">
       <ProjectItem
         v-for="(project, i) in projects"
         :key="'project' + i"

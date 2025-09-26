@@ -16,7 +16,7 @@ const props = defineProps<{
           props.data.company.name
         }}</a>
       </h3>
-      <h4 class="!font-semibold !text-black/80">
+      <h4 class="!font-semibold">
         {{ formatDate(props.data.start_date, "long") }}
         {{
           props.data.end_date

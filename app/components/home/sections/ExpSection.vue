@@ -5,7 +5,7 @@ const { expList } = useExperience();
 </script>
 <template>
   <div
-    class="flex flex-col bg-background gap-16 p-12 sm:pb-[10%] sm:py-[5%] sm:px-[15%]"
+    class="flex flex-col bg-background gap-16 p-12 sm:pb-[10%] sm:py-[8%] sm:px-[15%]"
   >
     <h1>{{ $t("experience") }}</h1>
 
