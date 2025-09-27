@@ -5,7 +5,7 @@ const { projects } = useProjects();
 </script>
 <template>
   <div
-    class="flex flex-col gap-20 bg-background-secondary p-12 sm:py-[8%] sm:px-[15%]"
+    class="flex flex-col gap-20 p-12 sm:py-[8%] sm:px-[15%]"
   >
     <h1>{{ $t("projects") }}</h1>
     <div class="flex flex-col gap-20">

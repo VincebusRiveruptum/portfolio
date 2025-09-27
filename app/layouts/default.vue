@@ -47,7 +47,7 @@ onMounted(() => {
       <div class="grow">
         <NuxtPage />
       </div>
-      <AppFooter />
+      <AppFooter class="z-25" />
     </div>
   </div>
 </template>
