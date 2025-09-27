@@ -9,10 +9,10 @@ const { form, isFormFilled, isPending, isSuccess, sendMessage } = useContact();
 
 <template>
   <div class="relative h-full flex flex-col">
-    <div class="fixed top-0 right-0 h-full z-[0] pointer-events-none">
+    <div class="fixed top-0 right-0 h-full pointer-events-none">
       <img src="/bg-tubes.png" class="object-cover w-full dark:invert" />
     </div>
-    <div class="relative flex flex-col z-[22]">
+    <div class="relative flex flex-col">
       <div
         class="flex flex-col gap-12 p-12 sm:py-[5%] sm:px-[15%] lg:px-[25%]"
       >

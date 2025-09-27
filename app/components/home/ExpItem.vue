@@ -9,7 +9,9 @@ const props = defineProps<{
 
 <template>
   <div class="flex flex-col gap-8">
-    <div class="flex justify-between gap-8">
+    <div
+      class="flex sm:flex-row flex-col text-center sm:text-left sm:justify-between gap-8"
+    >
       <h3>
         {{ $t(props.data.position) }} |
         <a :href="props.data.company?.url ?? '#'">{{
