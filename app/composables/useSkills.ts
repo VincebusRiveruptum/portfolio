@@ -24,7 +24,7 @@ const skills_EN: Skill[] = [
   {
     title: "databases",
     content: {
-      body: "SQL Database management, MySQL, Postgresql<",
+      body: "SQL Database management, MySQL, Postgresql",
     },
   },
   {

@@ -8,7 +8,9 @@ import {
 </script>
 
 <template>
-  <div class="flex flex-col gap-16 bg-background p-12 sm:py-[8%] sm:px-[15%]">
+  <div
+    class="flex flex-col gap-16 bg-background p-12 sm:py-[8%] sm:px-[15%]"
+  >
     <h1>{{ $t("personal-information") }}</h1>
 
     <div class="flex flex-col gap-16">
@@ -47,7 +49,7 @@ import {
           <p>{{ $t("resilency-paragraph") }}</p>
         </div>
         <div class="flex flex-col gap-4">
-          <HandMetalIcon class="text-primary"/>
+          <HandMetalIcon class="text-primary" />
           <h3>{{ $t("motivated") }}</h3>
           <p>{{ $t("motivated-paragraph") }}</p>
         </div>

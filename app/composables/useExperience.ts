@@ -102,9 +102,9 @@ const experience_ES: CareerExperience[] = [
     content: {
       sections: [
         "Lideré el desarrollo frontend en múltiples sistemas SPA y monolíticos utilizando Laravel, Vue 2, 3 y Tailwind.",
-        "Implementé un scrapper que automatiza la obtención de documentos desde sitios ofi ciales del Estado, optimizando procesos internos de un sistema de despachos aduanero.",
-        "Developed internal notification systems and automated, personalized email delivery, enhancing communicationbetween users and system events.",
-        "Integré visualizaciones geográfi cas con Mapbox.js para representar direcciones y rutas.",
+        "Implementé un scrapper que automatiza la obtención de documentos desde sitios oficiales del Estado, optimizando procesos internos de un sistema de despachos aduanero.",
+        "Desarrollé sistemas de notificaciones internas y envío de correos automatizados personalizados, mejorando la comunicación entre usuarios y eventos del sistema.",
+        "Integré visualizaciones geográficas con Mapbox.js para representar direcciones y rutas.",
         "Optimicé código y rendimiento de APIs, reduciendo tiempos de carga y mejorando la experiencia de usuario.",
       ],
     },
@@ -156,11 +156,9 @@ const useExperience = () => {
     () => {
       switch (locale.value.code) {
         case "es":
-          console.log("locale is es");
           expList.value = experience_ES;
           break;
         case "en":
-          console.log("locale is en");
           expList.value = experience_EN;
         default:
       }

@@ -12,12 +12,12 @@ const props = defineProps<{
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
     <div
-      class="rounded-xl shadow-xl mx-auto w-[80%] aspect-square dark:border-4  dark:border-white/50 dark:shadow-none !z-0"
+      class="rounded-xl shadow-xl mx-auto w-[80%] aspect-square dark:border-4  dark:border-white/50 dark:shadow-none"
       :class="[props.data.background]"
     >
       <img
         :src="props?.data.pictures ? props?.data.pictures[0] : placeholder"
-        class="w-full h-full object-contain z-[50]"
+        class="w-full h-full object-contain "
       />
     </div>
 

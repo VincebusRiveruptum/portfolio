@@ -7,11 +7,10 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 <template>
   <div class="relative">
     <div
-      class="absolute left-0 top-0 h-full w-full !z-[0] overflow-clip mask-alpha mask-b-from-black mask-b-to-transparent "
-    >
-    </div>
+      class="absolute left-0 top-0 h-full w-full overflow-clip mask-alpha mask-b-from-black mask-b-to-transparent"
+    ></div>
     <div
-      class="relative grid grid-cols-1 sm:grid-cols-2 gap-16 p-12 sm:py-[8%] sm:px-[15%] !z-[50]"
+      class="relative grid grid-cols-1 sm:grid-cols-2 gap-16 p-12 sm:py-[8%] sm:px-[15%] "
     >
       <div class="m-auto">
         <img
@@ -23,8 +22,10 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
 
       <div class="flex flex-col gap-8">
         <h1 class="text-center sm:text-left">VICENTE RIVEROS GARAY</h1>
-        <div class="flex flex-col sm:flex-row items-center gap-4">
-          <img :src="cl" alt="Chile" class="w-8" />
+        <div
+          class="flex flex-col sm:flex-row gap-4 items-center text-center sm:text-left"
+        >
+          <img :src="cl" alt="Chile" class="w-8 h-8" />
           <h3>{{ $t("about-header") }}</h3>
         </div>
         <div class="text-center sm:text-left">
@@ -46,7 +47,7 @@ import { GithubIcon, LinkedinIcon } from "lucide-vue-next";
         </div>
 
         <NuxtLink :to="{ path: 'contact' }" class="w-full">
-          <button class="btn-primary w-full">{{ $t("contact-me") }}</button>
+          <button class="btn-primary w-full sm:w-48">{{ $t("contact-me") }}</button>
         </NuxtLink>
       </div>
     </div>

@@ -9,10 +9,10 @@ import SkillsSection from "@/components/home/sections/SkillsSection.vue";
 
 <template>
   <div class="relative h-full flex flex-col">
-    <div class="fixed top-0 right-0 h-full z-[0] pointer-events-none">
-      <img src="/bg-tubes.png" class="object-cover w-full dark:invert" />
+    <div class="fixed top-0 right-0 h-full pointer-events-none">
+      <img src="/bg-tubes.png" class="object-cover w-full dark:invert " />
     </div>
-    <div class="relative flex flex-col z-[22]">
+    <div class="relative flex flex-col">
       <MeSection id="home" />
       <PersonalInfoSection id="personal-info" />
       <SkillsSection id="skills" />
